@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Combustível</title>
+</head>
+<body>
+    <script>
+        let distancia = parseFloat(prompt("Digite a distancia de viagem em km:"));
+        let consumo = parseFloat(prompt("Digite o consumo do veiculo em km por litro:"));
+        let preco = parseFloat(prompt("Digite preço do litro do combustivel:"));
+        let litros = distancia / consumo;
+        let custo = litros * preco;
+        alert("Litros necessarios: " + litros.toFixed(2) +
+            "\nCusto total: R$ " + custo.toFixed(2));
+            
+document.write("<h2>Resultado do combustível</h2>");
+document.write("Distância da viagem: " + distancia + " km<br>");
+document.write("Consumo do veículo: " + consumo + " km/l<br>");
+document.write("Preço por litro: R$ " + preco.toFixed(2) + "<br>");
+document.write("Litros necessários: " + litros.toFixed(2) + "<br>");
+document.write("Custo total: R$ " + custo.toFixed(2));
+    </script>
+</body>
+</html>

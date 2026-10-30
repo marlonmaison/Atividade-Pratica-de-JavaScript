@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de quatro operações</title>
+</head>
+<body>
+    <h1>Calculadora de quatro operações</h1>
+
+    <script>
+        let n1 = parseFloat(prompt("Digite o primeiro numero:"));
+        let n2 = parseFloat(prompt("Digite o segundo numero:"));
+        let soma = n1 + n2;
+        let subtracao = n1 - n2;
+        let multiplicacao = n1 * n2;
+        let divisao = n1 / n2;
+
+        if(n2 === 0) {
+            alert("Nao e possivel dividir por zero!");
+        } else {
+            alert("Resultado da divisao:" + divisao);
+        }
+        alert("Resultado da soma: " + soma);
+        alert("Resultado da subtracao: " + subtracao);
+        alert("Resultado da multiplicacao: " + multiplicacao);
+        document.write("<h2>Resultados da calculadora</h2>");
+        document.write("Resultado da soma: " + soma);
+        document.write("<br>Resultado da subtracao: " + subtracao);
+        document.write("<br>Resultado da multiplicacao: " + multiplicacao);
+        if(n2 === 0) {
+          document.write("<br>Não é possível dividir por zero!");  
+        } else {
+            document.write("<br>Resultado da divisao: " + divisao);
+        }
+    </script>
+</body>
+</html>
